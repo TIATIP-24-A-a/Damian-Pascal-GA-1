@@ -1,28 +1,27 @@
-import		math
-		from functools import reduce
+# gcd_calculator.py
+
+from math import gcd
+from functools import reduce
 
 
-		def
-ggt_von_datei(dateiname):
-try:
-#Datei öffnen und Zahlen einlesen
-with open(dateiname, 'r') as file:
-zahlen =[int (line.strip()) for line in file if line.strip().isdigit()]
+def calculate_gcd(numbers):
+    """
+    Calculate the GCD of a list of numbers.
 
-#Prüfen, ob wir mindestens zwei Zahlen haben
-	if len
-(zahlen) < 2:
-		print("Die Datei muss mindestens zwei Zahlen enthalten.")
-			return None
+    :param numbers: List of integers.
+    :return: GCD of the list of numbers.
+    """
+    if not numbers:
+        raise ValueError("The list of numbers cannot be empty.")
+    return reduce(gcd, numbers)
 
-#Berechne den GGT der Zahlen
-			ggt = reduce(math.gcd, zahlen)
 
-#Ausgabe des GGT
-			print(f "Der größte gemeinsame Teiler der Zahlen in {dateiname} ist: {ggt}")
-			return ggt
-
-except FileNotFoundError:
-		print(f "Die Datei {dateiname} wurde nicht gefunden.")
-except ValueError:
-		print("Die Datei enthält ungültige Daten.")
+# Example usage
+if __name__ == "__main__":
+    try:
+        # Input from the user
+        numbers = list(map(int, input("Enter numbers separated by spaces: ").split()))
+        result = calculate_gcd(numbers)
+        print(f"The GCD of {numbers} is {result}")
+    except ValueError as e:
+        print(e)
