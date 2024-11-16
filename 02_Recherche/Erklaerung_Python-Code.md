@@ -34,7 +34,7 @@ try:
 - with open(..., 'r'):: Öffnet die Datei im Lesemodus.
 - zahlen = [...]: List Comprehension, um alle Zahlen in der Datei zu lesen. Jede Zeile wird mit strip() von Leerzeichen bereinigt und überprüft, ob sie aus Ziffern besteht. Nur gültige Zahlen werden in eine Liste von int-Werten umgewandelt.
 
-Überprüfung, ob mindestens zwei Zahlen vorhanden sind:
+## Überprüfung, ob mindestens zwei Zahlen vorhanden sind:
 
 if len(zahlen) < 2:
     print("Die Datei muss mindestens zwei Zahlen enthalten.")
