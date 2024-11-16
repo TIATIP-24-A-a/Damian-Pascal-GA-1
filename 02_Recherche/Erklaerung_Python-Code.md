@@ -42,7 +42,7 @@ if len(zahlen) < 2:
     return None
 ```
 
-    Wenn weniger als zwei Zahlen vorhanden sind, wird eine Fehlermeldung ausgegeben und die Funktion mit None beendet.
+- Wenn weniger als zwei Zahlen vorhanden sind, wird eine Fehlermeldung ausgegeben und die Funktion mit None beendet.
 
 Berechnung des GGT:
 
