@@ -52,7 +52,7 @@ ggt = reduce(math.gcd, zahlen)
 
 - Hier verwendet der Code die reduce-Funktion. Sie wendet die Funktion math.gcd (Berechnung des größten gemeinsamen Teilers) wiederholt auf die Liste zahlen an. Dadurch wird der GGT für alle Zahlen in der Liste berechnet.
 
-Ausgabe des GGT:
+## Ausgabe des GGT:
 
 print(f"Der größte gemeinsame Teiler der Zahlen in {dateiname} ist: {ggt}")
 return ggt
