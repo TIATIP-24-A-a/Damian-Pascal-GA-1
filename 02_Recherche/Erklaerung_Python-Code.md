@@ -59,7 +59,7 @@ print(f"Der größte gemeinsame Teiler der Zahlen in {dateiname} ist: {ggt}")
 return ggt
 ```
 
-    Der berechnete GGT wird ausgegeben und auch zurückgegeben.
+- Der berechnete GGT wird ausgegeben und auch zurückgegeben.
 
 Fehlerbehandlung:
 
