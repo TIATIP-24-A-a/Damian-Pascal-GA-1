@@ -7,9 +7,12 @@ Dieser Python-Code versucht, den größten gemeinsamen Teiler (GGT) von Zahlen i
 ```python
 import math
 from functools import reduce
+```
 
     Das Modul math wird importiert, um auf die Funktion gcd (Greatest Common Divisor – GGT) zugreifen zu können, welche den größten gemeinsamen Teiler zwischen zwei Zahlen berechnet.
     functools.reduce wird verwendet, um eine Funktion auf eine Sequenz (z. B. eine Liste) anzuwenden und das Ergebnis zu kumulieren. In diesem Fall wird es verwendet, um den GGT mehrerer Zahlen zu berechnen.
+
+
 
 Definition der Funktion ggt_von_datei:
 
