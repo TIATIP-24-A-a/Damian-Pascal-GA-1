@@ -16,7 +16,9 @@ functools.reduce wird verwendet, um eine Funktion auf eine Sequenz (z. B. eine L
 
 ## Definition der Funktion ggt_von_datei:
 
+```python
 def ggt_von_datei(dateiname):
+```
 
     Diese Funktion erwartet den Dateinamen als Eingabe und versucht, den GGT der darin enthaltenen Zahlen zu berechnen.
 
