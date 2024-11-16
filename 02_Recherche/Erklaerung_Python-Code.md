@@ -30,30 +30,36 @@ try:
         zahlen = [int(line.strip()) for line in file if line.strip().isdigit()]
 ```
 
-    try:: Dieser Block versucht, die Datei zu öffnen und zu verarbeiten.
-    with open(..., 'r'):: Öffnet die Datei im Lesemodus.
-    zahlen = [...]: List Comprehension, um alle Zahlen in der Datei zu lesen. Jede Zeile wird mit strip() von Leerzeichen bereinigt und überprüft, ob sie aus Ziffern besteht. Nur gültige Zahlen werden in eine Liste von int-Werten umgewandelt.
+- try: Dieser Block versucht, die Datei zu öffnen und zu verarbeiten.
+- with open(..., 'r'):: Öffnet die Datei im Lesemodus.
+- zahlen = [...]: List Comprehension, um alle Zahlen in der Datei zu lesen. Jede Zeile wird mit strip() von Leerzeichen bereinigt und überprüft, ob sie aus Ziffern besteht. Nur gültige Zahlen werden in eine Liste von int-Werten umgewandelt.
 
-Überprüfung, ob mindestens zwei Zahlen vorhanden sind:
+## Überprüfung, ob mindestens zwei Zahlen vorhanden sind:
 
+```python
 if len(zahlen) < 2:
     print("Die Datei muss mindestens zwei Zahlen enthalten.")
     return None
+```
 
-    Wenn weniger als zwei Zahlen vorhanden sind, wird eine Fehlermeldung ausgegeben und die Funktion mit None beendet.
+- Wenn weniger als zwei Zahlen vorhanden sind, wird eine Fehlermeldung ausgegeben und die Funktion mit None beendet.
 
-Berechnung des GGT:
+## Berechnung des GGT:
 
+```python
 ggt = reduce(math.gcd, zahlen)
+```
 
-    Hier verwendet der Code die reduce-Funktion. Sie wendet die Funktion math.gcd (Berechnung des größten gemeinsamen Teilers) wiederholt auf die Liste zahlen an. Dadurch wird der GGT für alle Zahlen in der Liste berechnet.
+- Hier verwendet der Code die reduce-Funktion. Sie wendet die Funktion math.gcd (Berechnung des größten gemeinsamen Teilers) wiederholt auf die Liste zahlen an. Dadurch wird der GGT für alle Zahlen in der Liste berechnet.
 
-Ausgabe des GGT:
+## Ausgabe des GGT:
 
+```python
 print(f"Der größte gemeinsame Teiler der Zahlen in {dateiname} ist: {ggt}")
 return ggt
+```
 
-    Der berechnete GGT wird ausgegeben und auch zurückgegeben.
+- Der berechnete GGT wird ausgegeben und auch zurückgegeben.
 
 Fehlerbehandlung:
 
