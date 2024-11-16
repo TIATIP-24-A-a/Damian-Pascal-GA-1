@@ -61,7 +61,7 @@ return ggt
 
 - Der berechnete GGT wird ausgegeben und auch zurückgegeben.
 
-Fehlerbehandlung:
+## Fehlerbehandlung:
 
 except FileNotFoundError:
     print(f"Die Datei {dateiname} wurde nicht gefunden.")
