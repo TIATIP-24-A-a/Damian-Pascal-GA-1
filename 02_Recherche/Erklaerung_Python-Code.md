@@ -22,7 +22,7 @@ def ggt_von_datei(dateiname):
 
 Diese Funktion erwartet den Dateinamen als Eingabe und versucht, den GGT der darin enthaltenen Zahlen zu berechnen.
 
-Versuch, die Datei zu öffnen und zu lesen:
+## Versuch, die Datei zu öffnen und zu lesen:
 
 try:
     with open(dateiname, 'r') as file:
