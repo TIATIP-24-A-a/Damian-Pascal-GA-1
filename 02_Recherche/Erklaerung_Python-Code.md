@@ -63,10 +63,12 @@ return ggt
 
 ## Fehlerbehandlung:
 
+```python
 except FileNotFoundError:
     print(f"Die Datei {dateiname} wurde nicht gefunden.")
 except ValueError:
     print("Die Datei enthält ungültige Werte. Bitte stellen Sie sicher, dass alle Zeilen Zahlen enthalten.")
+```
 
-    FileNotFoundError: Wird ausgelöst, wenn die angegebene Datei nicht existiert. Es wird eine Fehlermeldung ausgegeben.
-    ValueError: Tritt auf, wenn in der Datei nicht-zahlenmäßige Inhalte gefunden werden, und informiert den Benutzer darüber.
+- FileNotFoundError: Wird ausgelöst, wenn die angegebene Datei nicht existiert. Es wird eine Fehlermeldung ausgegeben.
+- ValueError: Tritt auf, wenn in der Datei nicht-zahlenmäßige Inhalte gefunden werden, und informiert den Benutzer darüber.
