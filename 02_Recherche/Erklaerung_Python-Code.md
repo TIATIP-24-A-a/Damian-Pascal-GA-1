@@ -24,9 +24,11 @@ Diese Funktion erwartet den Dateinamen als Eingabe und versucht, den GGT der dar
 
 ## Versuch, die Datei zu öffnen und zu lesen:
 
+```python
 try:
     with open(dateiname, 'r') as file:
         zahlen = [int(line.strip()) for line in file if line.strip().isdigit()]
+```
 
     try:: Dieser Block versucht, die Datei zu öffnen und zu verarbeiten.
     with open(..., 'r'):: Öffnet die Datei im Lesemodus.
