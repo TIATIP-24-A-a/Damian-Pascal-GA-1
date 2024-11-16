@@ -36,9 +36,11 @@ try:
 
 ## Überprüfung, ob mindestens zwei Zahlen vorhanden sind:
 
+```python
 if len(zahlen) < 2:
     print("Die Datei muss mindestens zwei Zahlen enthalten.")
     return None
+```
 
     Wenn weniger als zwei Zahlen vorhanden sind, wird eine Fehlermeldung ausgegeben und die Funktion mit None beendet.
 
