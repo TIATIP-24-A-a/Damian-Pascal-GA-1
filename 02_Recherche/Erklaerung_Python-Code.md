@@ -50,7 +50,7 @@ if len(zahlen) < 2:
 ggt = reduce(math.gcd, zahlen)
 ```
 
-    Hier verwendet der Code die reduce-Funktion. Sie wendet die Funktion math.gcd (Berechnung des größten gemeinsamen Teilers) wiederholt auf die Liste zahlen an. Dadurch wird der GGT für alle Zahlen in der Liste berechnet.
+- Hier verwendet der Code die reduce-Funktion. Sie wendet die Funktion math.gcd (Berechnung des größten gemeinsamen Teilers) wiederholt auf die Liste zahlen an. Dadurch wird der GGT für alle Zahlen in der Liste berechnet.
 
 Ausgabe des GGT:
 
