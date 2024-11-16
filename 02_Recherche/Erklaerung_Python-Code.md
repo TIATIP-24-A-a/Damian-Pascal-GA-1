@@ -9,7 +9,7 @@ from math import gcd
 from functools import reduce
 ```
 
-- Das Modul math wird importiert, um auf die Funktion gcd (Greatest Common Divisor – GGT) zugreifen zu können, welche den größten gemeinsamen Teiler zwischen zwei Zahlen berechnet.
+- Die Funktion GCD (Greatest Common Divisor – GGT) wird aus dem Modul math importiert, welche den größten gemeinsamen Teiler zwischen zwei Zahlen berechnet.
 - functools.reduce wird verwendet, um eine Funktion auf eine Sequenz (z. B. eine Liste) anzuwenden und das Ergebnis zu kumulieren. In diesem Fall wird es verwendet, um den GGT mehrerer Zahlen zu berechnen.
 
 
