@@ -44,7 +44,7 @@ if len(zahlen) < 2:
 
 - Wenn weniger als zwei Zahlen vorhanden sind, wird eine Fehlermeldung ausgegeben und die Funktion mit None beendet.
 
-Berechnung des GGT:
+## Berechnung des GGT:
 
 ggt = reduce(math.gcd, zahlen)
 
