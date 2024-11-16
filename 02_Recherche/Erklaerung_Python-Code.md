@@ -5,7 +5,7 @@ Dieser Python-Code versucht, den größten gemeinsamen Teiler (GGT) von Zahlen i
 ## Import der benötigten Module:
 
 ```python
-import math
+from math import gcd
 from functools import reduce
 ```
 
