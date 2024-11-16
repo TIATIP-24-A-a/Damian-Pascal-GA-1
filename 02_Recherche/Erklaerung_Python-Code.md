@@ -14,7 +14,7 @@ functools.reduce wird verwendet, um eine Funktion auf eine Sequenz (z. B. eine L
 
 
 
-Definition der Funktion ggt_von_datei:
+## Definition der Funktion ggt_von_datei:
 
 def ggt_von_datei(dateiname):
 
