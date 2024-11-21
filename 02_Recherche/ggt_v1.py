@@ -12,7 +12,7 @@ def calculate_gcd(numbers):
     :return: GCD of the list of numbers.
     """
     if not numbers:
-        raise ValueError("The list of numbers cannot be empty.")
+        raise ValueError("Die Zahlenliste darf nicht leer sein.")
     return reduce(gcd, numbers)
 
 
