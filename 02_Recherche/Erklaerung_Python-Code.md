@@ -14,13 +14,26 @@ from functools import reduce
 
 
 
-## Definition der Funktion ggt_von_datei:
+## Definition der Funktion calculate_gcd:
 
 ```python
-def ggt_von_datei(dateiname):
+def calculate_gcd(numbers):
+    """
+    Calculate the GCD of a list of numbers.
+
+    :param numbers: List of integers.
+    :return: GCD of the list of numbers.
+    """
+
+    return reduce(gcd, numbers)
 ```
 
-- Diese Funktion erwartet den Dateinamen als Eingabe und versucht, den GGT der darin enthaltenen Zahlen zu berechnen.
+- calculate_gcd: Diese Funktion berechnet den GCD (größten gemeinsamen Teiler) einer Liste von Zahlen.
+
+    - numbers ist eine Liste von Ganzzahlen, deren GCD berechnet werden soll.
+    - Die Funktion verwendet reduce(gcd, numbers), um den GCD aller Zahlen in der Liste zu berechnen:
+       - Zuerst wird der GCD der ersten beiden Zahlen berechnet.
+       - Danach wird der GCD des Ergebnisses mit der nächsten Zahl kombiniert, und so weiter, bis der GCD aller Zahlen in der Liste berechnet wurde.
 
 ## Versuch, die Datei zu öffnen und zu lesen:
 
