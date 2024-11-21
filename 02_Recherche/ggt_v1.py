@@ -19,8 +19,9 @@ def calculate_gcd(numbers):
 # Example usage
 if __name__ == "__main__":
     try:
-        # Input from the user
-        numbers = list(map(int, input("Enter numbers separated by spaces: ").split()))
+        # Eingabe von Benutzer und Bereinigung der Leerzeichen
+        input_string = input("Enter numbers separated by spaces: ").strip()
+
         result = calculate_gcd(numbers)
         print(f"The GCD of {numbers} is {result}")
     except ValueError as e:
