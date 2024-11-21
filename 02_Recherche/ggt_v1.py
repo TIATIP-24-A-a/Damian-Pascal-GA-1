@@ -20,7 +20,7 @@ def calculate_gcd(numbers):
 if __name__ == "__main__":
     try:
         # Eingabe von Benutzer und Bereinigung der führenden oder nachfolgenden Leerzeichen
-        input_string = input("Enter numbers separated by spaces: ").strip()
+        input_string = input("Fügen Sie Ganzzahlen getrennt durch Leerzeichen ein: ").strip()
 
         # Validierung der Benutzereigabe
         if not input_string:
