@@ -32,4 +32,4 @@ if __name__ == "__main__":
         result = calculate_gcd(numbers)
         print(f"Der groesste gemeinsame Teiler von {numbers} ist {result}")
     except ValueError as e:
-        print(f"Error: {e}")
+        print(f"Fehler: {e}")
