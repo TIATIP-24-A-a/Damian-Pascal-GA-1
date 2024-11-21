@@ -35,17 +35,21 @@ def calculate_gcd(numbers):
        - Zuerst wird der GCD der ersten beiden Zahlen berechnet.
        - Danach wird der GCD des Ergebnisses mit der nächsten Zahl kombiniert, und so weiter, bis der GCD aller Zahlen in der Liste berechnet wurde.
 
-## Versuch, die Datei zu öffnen und zu lesen:
+## Benutzereingabe und Verarbeitung
 
 ```python
-try:
-    with open(dateiname, 'r') as file:
-        zahlen = [int(line.strip()) for line in file if line.strip().isdigit()]
+if __name__ == "__main__":
+    try:
+        input_string = input("Fügen Sie Ganzzahlen getrennt durch Leerzeichen ein: ").strip()
 ```
 
-- try: Dieser Block versucht, die Datei zu öffnen und zu verarbeiten.
-- with open(..., 'r'):: Öffnet die Datei im Lesemodus.
-- zahlen = [...]: List Comprehension, um alle Zahlen in der Datei zu lesen. Jede Zeile wird mit strip() von Leerzeichen bereinigt und überprüft, ob sie aus Ziffern besteht. Nur gültige Zahlen werden in eine Liste von int-Werten umgewandelt.
+- if __name__ == "__main__":: Dieser Block stellt sicher, dass der folgende Code nur ausgeführt wird, wenn das Skript direkt ausgeführt wird und nicht, wenn es als Modul importiert wird.
+- try: Dieser Block versucht, die Eingabe zu verarbeiten. 
+- input_string = input: Fordert den Benutzer zu einer Eingabe auf
+  - "Fügen Sie Ganzzahlen getrennt durch Leerzeichen ein: ". Fordert den Benutzer zur Eingabe von Ganzzahlen auf
+  - .strip(): entfernt führende und nachfolgende Leerzeichen, um sicherzustellen, dass keine unnötigen Leerzeichen die Eingabe beeinträchtigen.
+
+    
 
 ## Überprüfung, ob mindestens zwei Zahlen vorhanden sind:
 
