@@ -22,6 +22,10 @@ if __name__ == "__main__":
         # Eingabe von Benutzer und Bereinigung der führenden oder nachfolgenden Leerzeichen
         input_string = input("Enter numbers separated by spaces: ").strip()
 
+        # Validierung der Benutzereigabe
+        if not input_string:
+            raise ValueError("The list of numbers cannot be empty.")
+
         result = calculate_gcd(numbers)
         print(f"The GCD of {numbers} is {result}")
     except ValueError as e:
