@@ -19,7 +19,7 @@ def calculate_gcd(numbers):
 # Example usage
 if __name__ == "__main__":
     try:
-        # Eingabe von Benutzer und Bereinigung der Leerzeichen
+        # Eingabe von Benutzer und Bereinigung der führenden oder nachfolgenden Leerzeichen
         input_string = input("Enter numbers separated by spaces: ").strip()
 
         result = calculate_gcd(numbers)
