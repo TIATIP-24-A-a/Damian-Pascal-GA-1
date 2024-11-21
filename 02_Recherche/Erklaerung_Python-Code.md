@@ -51,15 +51,24 @@ if __name__ == "__main__":
 
     
 
-## Überprüfung, ob mindestens zwei Zahlen vorhanden sind:
+## Validierung der Eingabe
 
 ```python
-if len(zahlen) < 2:
-    print("Die Datei muss mindestens zwei Zahlen enthalten.")
-    return None
+if not input_string:
+    raise ValueError("Eingabe darf nicht leer sein.")
+ try:
+    numbers = list(map(int, input_string.split()))
+except ValueError:
+    raise ValueError("Alle Eingaben muessen Ganzzahlen sein!.")
 ```
 
-- Wenn weniger als zwei Zahlen vorhanden sind, wird eine Fehlermeldung ausgegeben und die Funktion mit None beendet.
+- Überprüfung, ob Eingabe leer ist:
+  - if not input_string:: Dieser Codeblock überprüft, ob eingabe Leer ist
+  - Mit raise ValueError("Eingabe darf nicht leer sein.") wird die Fehlermeldung "Eingabe darf nicht leer sein" ausgegeben, wenn keine Eingabe getätigt wurde
+- Konvertierung der Eingabe in eine Liste von Ganzzahlen und Fehlermeldung wenn etwas anderes als Ganzzahlen eingegeben wurde:
+   - input_string.split() teilt die Eingabezeichenkette an den Leerzeichen und gibt eine Liste von Strings zurück.
+   - map(int, input_string.split()) wandelt diese Liste von Strings in eine Liste von Ganzzahlen um.
+   - Mit raise ValueError("Alle Eingaben muessen Ganzzahlen sein!.") wird die Fehlermeldung "Alle Eingaben muessen Ganzzahlen sein!" ausgegeben, wenn als Eingabe keine Ganzzahlen verwendet wurden.
 
 ## Berechnung des GGT:
 
