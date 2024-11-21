@@ -30,6 +30,6 @@ if __name__ == "__main__":
             raise ValueError("Alle Eingaben muessen Ganzzahlen sein!.")
 
         result = calculate_gcd(numbers)
-        print(f"The GCD of {numbers} is {result}")
+        print(f"Der groesste gemeinsame Teiler von {numbers} ist {result}")
     except ValueError as e:
         print(f"Error: {e}")
