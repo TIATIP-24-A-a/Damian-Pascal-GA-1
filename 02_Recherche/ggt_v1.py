@@ -33,4 +33,4 @@ if __name__ == "__main__":
         result = calculate_gcd(numbers)
         print(f"The GCD of {numbers} is {result}")
     except ValueError as e:
-        print(e)
+        print(f"Error: {e}")
