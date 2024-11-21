@@ -25,6 +25,10 @@ if __name__ == "__main__":
         # Validierung der Benutzereigabe
         if not input_string:
             raise ValueError("The list of numbers cannot be empty.")
+        try:
+            numbers = list(map(int, input_string.split()))
+        except ValueError:
+            raise ValueError("Alle Eingaben muessen Ganzzahlen sein!.")
 
         result = calculate_gcd(numbers)
         print(f"The GCD of {numbers} is {result}")
