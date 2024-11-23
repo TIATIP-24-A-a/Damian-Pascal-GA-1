@@ -12,8 +12,29 @@ def calculate_gcd(numbers):
     :return: GCD of the list of numbers.
     """
 
+    if len(numbers) == 0:
+        raise ValueError('Numbers cannot be empty.')
+
+    try:
+        numbers = map(int, numbers)
+    except ValueError:
+        raise ValueError("Alle Eingaben muessen Ganzzahlen sein!.")
+
+    if not numbers:
+        raise ValueError("Es sind keine Nummern vorhanden")
+
     return reduce(gcd, numbers)
 
+
+def parse_input(input_string):
+    # Validierung der Benutzereigabe
+    if not input_string:
+        raise ValueError("Eingabe darf nicht leer sein.")
+    try:
+        numbers = list(map(int, input_string.split()))
+        return numbers
+    except ValueError:
+        raise ValueError("Alle Eingaben muessen Ganzzahlen sein!.")
 
 # Example usage
 if __name__ == "__main__":
@@ -21,13 +42,7 @@ if __name__ == "__main__":
         # Eingabe von Benutzer und Bereinigung der führenden oder nachfolgenden Leerzeichen
         input_string = input("Fügen Sie Ganzzahlen getrennt durch Leerzeichen ein: ").strip()
 
-        # Validierung der Benutzereigabe
-        if not input_string:
-            raise ValueError("Eingabe darf nicht leer sein.")
-        try:
-            numbers = list(map(int, input_string.split()))
-        except ValueError:
-            raise ValueError("Alle Eingaben muessen Ganzzahlen sein!.")
+        number = parse_input(input_string)
 
         #Berechnen und Ausgabe des groessten gemeinsamen Teilers
         result = calculate_gcd(numbers)
