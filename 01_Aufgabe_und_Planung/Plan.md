@@ -21,3 +21,4 @@ von Zahlen in einer Datei berechnet, kannst du folgendermaßen vorgehen:
    mit dem Python arbeiten kann (z. B. eine Liste von ganzen Zahlen)?
 4. Wie gibt man das Ergebnis aus?
 
+---
