@@ -42,7 +42,7 @@ if __name__ == "__main__":
         # Eingabe von Benutzer und Bereinigung der führenden oder nachfolgenden Leerzeichen
         input_string = input("Fügen Sie Ganzzahlen getrennt durch Leerzeichen ein: ").strip()
 
-        number = parse_input(input_string)
+        numbers = parse_input(input_string)
 
         #Berechnen und Ausgabe des groessten gemeinsamen Teilers
         result = calculate_gcd(numbers)
