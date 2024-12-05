@@ -1,6 +1,6 @@
 
 ---
-# Unser Projekt
+# Unser Projekt Greatest Common Divisor GCD
 
 - [x] Grösster Gemeinsamer Teiler GGT oder in English Greatest Common Divisor GCD
 - [x] Das Programm soll aus mindestens einer ganzen Zahl den GGT ausrechnen können 
@@ -170,6 +170,9 @@ if __name__ == "__main__":
    - Abfangen von Fehlern mit sinnvollen Fehlermeldungen.
 
 ---
+## Flowchart des Programms Greatest Common Divisor
+
+![GCD-flowchart-2.png](Pics/GCD-flowchart-2.png)
 
 ## **Zusammenfassung**
 - Das Skript berechnet den GGT einer Zahlenliste.
